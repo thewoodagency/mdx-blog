@@ -1,0 +1,57 @@
+---
+title: MDX Tutorial
+slug: mdx-tutorial
+image: ./images/gatsby-1.png
+date: 2022-05-10
+author: john smith
+category: gatsby
+readTime: 5
+---
+
+import { Link } from 'gatsby'
+import { FiInfo } from 'react-icons/all'
+import { Counter, LikeButton, RegVideo, Video } from '../../components/Complete'
+export const year = 2022
+
+# my first mdx file
+
+## my first mdx file
+
+### my first mdx file
+
+```js
+const firstname = 'aaa'
+const lastname = 'bbb'
+```
+
+  <div className="code">
+
+
+    ```js
+    const firstname = 'ppp'
+    const lastna me = 'ddd'
+    ```
+
+  </div>
+
+**{year} MDX allows you to use JSX in your markdown content.** _You can import components, such as interactive charts or alerts, and embed them within your content._ This makes writing long-form content with components a blast.
+
+<div className={'nice-text'}>
+  <h3>nice text</h3>
+  <FiInfo className={'nice-text-icon'}></FiInfo>
+  Learn Markdown in 60 pages. Designed for both novices and experts, The Markdown
+  Guide book is a comprehensive reference that has everything you need to get started
+  and master Markdown syntax.
+</div>
+
+<Counter />
+
+<LikeButton />
+<RegVideo />
+<Video />
+
+![nice image](./images/gatsby-1.png)
+
+<Link to="/posts" className="btn center-btn">
+  all posts
+</Link>

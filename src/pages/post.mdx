@@ -1,0 +1,41 @@
+import {Link} from 'gatsby'
+import {FiInbox, FiInfo} from "react-icons/all";
+import styled from 'styled-components';
+import {Counter, LikeButton} from '../components/Complete';
+export const year = 2022
+
+<section className={'mdx-page'}>
+
+# my first mdx file
+## my first mdx file
+### my first mdx file
+
+```js
+const firstname = 'aaa'
+const lastname = 'bbb'
+```
+
+<div className="code">
+
+  ```js
+  const firstname = 'ccc'
+  const lastna me = 'ddd'
+  ```
+
+</div>
+
+  **{year} MDX allows you to use JSX in your markdown content.** _You can import components, such as interactive charts or alerts, and embed them within your content._ This makes writing long-form content with components a blast.
+
+  <Link to="/posts" className={'btn center-btn'}>all posts</Link>
+
+  <div className={'nice-text'}>
+    <h3>nice text</h3>
+    <FiInfo className={'nice-text-icon'}></FiInfo>
+    Learn Markdown in 60 pages. Designed for both novices and experts, The Markdown Guide book is a comprehensive reference that has everything you need to get started and master Markdown syntax.
+  </div>
+
+  <Counter />
+
+  <LikeButton/>
+
+</section>
